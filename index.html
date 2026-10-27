@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOOR.CO - Modern Industrial Rolling Door</title>
+  
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#0B1325',
+              navy: '#0f172a',
+              accent: '#2563eb',
+              light: '#f8fafc',
+            }
+          },
+          boxShadow: {
+            'card': '0 10px 30px -5px rgba(0, 0, 0, 0.05)',
+            'elevated': '0 20px 40px -15px rgba(15, 23, 42, 0.08)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background-color: #FAFAFA;
+      color: #0F172A;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
+</head>
+<body class="bg-[#FAFAFA] text-slate-800 antialiased selection:bg-slate-900 selection:text-white">
+
+
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+
+        <a href="#" class="flex items-center gap-2 group">
+          <div class="flex flex-col">
+            <span class="text-2xl font-extrabold tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors">
+              DOOR<span class="text-blue-600">.CO</span>
+            </span>
+            <span class="text-[10px] tracking-wider uppercase font-semibold text-slate-400 -mt-1 hidden sm:block">
+              Modern Rolling Door
+            </span>
+          </div>
+        </a>
+
+
+        <nav class="hidden md:flex items-center space-x-8 lg:space-x-10 text-sm font-semibold text-slate-600">
+          <a href="#fitur" class="hover:text-slate-900 transition-colors py-1">Fitur</a>
+          <a href="#anatomi" class="hover:text-slate-900 transition-colors py-1">Anatomi</a>
+          <a href="#galeri" class="hover:text-slate-900 transition-colors py-1">Galeri</a>
+          <a href="#layanan" class="hover:text-slate-900 transition-colors py-1">Layanan</a>
+          <a href="#spesifikasi" class="hover:text-slate-900 transition-colors py-1">Spesifikasi</a>
+        </nav>
+
+ 
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="#survei" 
+             class="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 transition-all shadow-sm hover:shadow active:scale-95">
+            Pesan Sekarang
+          </a>
+        </div>
+
+
+        <button id="mobile-menu-btn" type="button" aria-label="Toggle navigation"
+                class="md:hidden inline-flex items-center justify-center p-2.5 rounded-xl text-slate-700 hover:text-slate-900 hover:bg-slate-100 focus:outline-none transition-colors">
+          <svg id="hamburger-icon" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="close-icon" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-3 transition-all duration-300">
+      <a href="#fitur" class="mobile-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50">Fitur</a>
+      <a href="#anatomi" class="mobile-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50">Anatomi</a>
+      <a href="#galeri" class="mobile-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50">Galeri</a>
+      <a href="#layanan" class="mobile-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50">Layanan</a>
+      <a href="#spesifikasi" class="mobile-link block px-3 py-2 rounded-lg text-base font-semibold text-slate-700 hover:bg-slate-50">Spesifikasi</a>
+      <div class="pt-2">
+        <a href="#survei" class="mobile-link block w-full text-center py-3 px-4 rounded-xl font-semibold text-white bg-slate-900 shadow">
+          Pesan Sekarang
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+
+  <section class="pt-8 pb-16 md:pt-12 md:pb-20 lg:pt-16 lg:pb-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        
+
+        <div class="lg:col-span-6 xl:col-span-6 flex flex-col items-start text-left">
+          
+     
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 border border-blue-200/60 mb-6">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="text-xs font-bold tracking-wider uppercase text-blue-800">SERVIS & PASANG BARU • 24 JAM JABODETABEK</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="text-3xl sm:text-4xl lg:text-[3rem] font-extrabold tracking-tight text-slate-900 leading-[1.18] mb-6">
+            Tukang Servis <br class="hidden sm:inline">
+            <span class="text-blue-600">Rolling Door & Folding Gate</span> <br class="hidden sm:inline">
+            Jabodetabek | 24 Jam.
+          </h1>
+
+          <!-- Subtitle / Paragraph -->
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-xl mb-8">
+            Spesialis servis, perbaikan, dan pasang baru Rolling Door Manual & Otomatis, Folding Gate (Pintu Harmonika), Sliding Door, serta Pintu & Pagar Besi untuk ruko, toko, gudang, pabrik, dan rumah. Siap datang ke lokasi, pengerjaan cepat, rapi & bergaransi!
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
+            <a href="#survei" 
+               class="inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-bold text-white bg-slate-900 hover:bg-slate-800 transition-all shadow-md hover:shadow-lg active:scale-95">
+              Booking Survei Lokasi
+            </a>
+            <a href="https://wa.me/6287871793001?text=Halo%20Admin,%20saya%20butuh%20tukang%20servis%20rolling%20door" 
+               target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full text-sm font-bold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-all shadow-sm active:scale-95">
+              <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.071.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z"/>
+              </svg>
+              <span>0878-7179-3001</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Hero Visual Image -->
+        <div class="lg:col-span-6 xl:col-span-6 w-full">
+          <div class="relative w-full aspect-[4/3] sm:aspect-[16/11] lg:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-slate-100 bg-slate-100 group">
+            <img 
+              src="/assets/images/utama.jpg"
+              alt="Interior ruangan minimalis modern dengan sofa dan laci elegan"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+              loading="eager"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== 4 BENEFIT FEATURES SECTION ==================== -->
+  <section id="fitur" class="py-12 lg:py-16 bg-white border-y border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+        
+        <!-- Feature 1: Sirkulasi Udara -->
+        <div class="flex flex-col items-start group">
+          <div class="w-12 h-12 rounded-full border border-slate-200 bg-slate-50 flex items-center justify-center text-slate-700 mb-4 group-hover:border-slate-900 group-hover:bg-slate-900 group-hover:text-white transition-all duration-300">
+            <!-- Wind / Airflow Icon -->
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Sirkulasi Udara</h3>
+          <p class="text-sm text-slate-500 leading-relaxed">
+            Desain perforasi presisi menjaga sirkulasi udara ruangan tetap lancar, sejuk, dan mencegah kelembapan berlebih.
+          </p>
+        </div>
+
+        <!-- Feature 2: Estetik Modern -->
+        <div class="flex flex-col items-start group">
+          <div class="w-12 h-12 rounded-full border border-slate-200 bg-slate-50 flex items-center justify-center text-slate-700 mb-4 group-hover:border-slate-900 group-hover:bg-slate-900 group-hover:text-white transition-all duration-300">
+            <!-- Sliders / Design Icon -->
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Estetik Modern</h3>
+          <p class="text-sm text-slate-500 leading-relaxed">
+            Sentuhan arsitektur kontemporer minimalis yang mempercantik tampilan fasad rumah maupun tempat usaha Anda.
+          </p>
+        </div>
+
+        <!-- Feature 3: Aman / Keamanan Ekstra -->
+        <div class="flex flex-col items-start group">
+          <div class="w-12 h-12 rounded-full border border-slate-200 bg-slate-50 flex items-center justify-center text-slate-700 mb-4 group-hover:border-slate-900 group-hover:bg-slate-900 group-hover:text-white transition-all duration-300">
+            <!-- Shield / Security Icon -->
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Keamanan Ekstra</h3>
+          <p class="text-sm text-slate-500 leading-relaxed">
+            Plat baja berkekuatan tinggi dengan sistem penguncian ganda untuk perlindungan aset yang maksimal dan kokoh.
+          </p>
+        </div>
+
+        <!-- Feature 4: Tahan Karat -->
+        <div class="flex flex-col items-start group">
+          <div class="w-12 h-12 rounded-full border border-slate-200 bg-slate-50 flex items-center justify-center text-slate-700 mb-4 group-hover:border-slate-900 group-hover:bg-slate-900 group-hover:text-white transition-all duration-300">
+            <!-- Umbrella / Weatherproof Icon -->
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 00-9.78 2.096A4.001 4.001 0 003 15z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 mb-2">Tahan Karat</h3>
+          <p class="text-sm text-slate-500 leading-relaxed">
+            Finishing powder coating premium tahan cuaca ekstrem dan anti-korosi menjamin keawetan selama bertahun-tahun.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== ANATOMI PRODUK SECTION ==================== -->
+  <section id="anatomi" class="py-16 md:py-24 bg-[#FAFAFA]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-12 lg:mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Anatomi Produk
+        </h2>
+        <p class="text-slate-500 text-sm sm:text-base mt-3">
+          Setiap komponen dirancang dengan presisi teknik tinggi demi ketahanan, keamanan, dan keindahan.
+        </p>
+      </div>
+
+      <!-- Desktop & Tablet Layout with Visual Callout Lines -->
+      <div class="relative max-w-5xl mx-auto hidden md:block">
+        
+        <div class="grid grid-cols-12 items-center gap-6">
+          
+          <!-- Left Callouts (Col 1-4) -->
+          <div class="col-span-4 space-y-12 text-right pr-4">
+            
+            <!-- Callout 1 -->
+            <div class="relative group">
+              <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Micro-Perforated Steel</h4>
+              <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                Plat baja mikro presisi untuk sirkulasi udara optimal tanpa mengorbankan privasi.
+              </p>
+              <!-- Pointer Line to Image -->
+              <div class="hidden lg:flex items-center absolute -right-8 top-3 w-8">
+                <div class="w-full h-px bg-slate-300"></div>
+                <div class="w-2 h-2 rounded-full bg-slate-900"></div>
+              </div>
+            </div>
+
+            <!-- Callout 2 -->
+            <div class="relative group">
+              <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Solid Steel Bottom Slat</h4>
+              <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                Bilah bawah baja solid tebal untuk mencegah benturan keras, rembesan air, dan debu.
+              </p>
+              <!-- Pointer Line to Image -->
+              <div class="hidden lg:flex items-center absolute -right-8 top-3 w-8">
+                <div class="w-full h-px bg-slate-300"></div>
+                <div class="w-2 h-2 rounded-full bg-slate-900"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Center Product Visual (Col 5-8) -->
+          <div class="col-span-4">
+            <div class="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200/80 bg-white group">
+              <img 
+                src="./assets/images/visual.jpg"
+                alt="Detail konstruksi presisi rolling door baja"
+                class="w-full h-80 lg:h-100 object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div class="absolute inset-0 bg-slate-950/10 pointer-events-none"></div>
+            </div>
+          </div>
+
+          <!-- Right Callout (Col 9-12) -->
+          <div class="col-span-4 space-y-12 text-left pl-4">
+            
+            <!-- Callout 3 -->
+            <div class="relative group">
+              <!-- Pointer Line from Image -->
+              <div class="hidden lg:flex items-center absolute -left-8 top-3 w-8">
+                <div class="w-2 h-2 rounded-full bg-slate-900"></div>
+                <div class="w-full h-px bg-slate-300"></div>
+              </div>
+              <h4 class="text-base font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Central Lock System</h4>
+              <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+                Kunci silinder ganda di bagian tengah memberikan perlindungan maksimal dari kedua sisi.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Mobile Layout: Stacked Image with Callout Cards Below -->
+      <div class="md:hidden space-y-6">
+        <!-- Center Image -->
+        <div class="rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-white">
+          <img 
+            src="assets/images/visual.jpg"
+            alt="Detail konstruksi presisi rolling door baja"
+            class="w-full h-64 object-cover"
+          />
+        </div>
+
+        <!-- Mobile Anatomy Cards -->
+        <div class="space-y-4">
+          <div class="p-4 rounded-xl bg-white border border-slate-100 shadow-sm flex items-start gap-3">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-600 mt-1.5 flex-shrink-0"></span>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900">Micro-Perforated Steel</h4>
+              <p class="text-xs text-slate-500 mt-1">Plat baja mikro presisi untuk sirkulasi udara optimal tanpa mengorbankan privasi.</p>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-white border border-slate-100 shadow-sm flex items-start gap-3">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-600 mt-1.5 flex-shrink-0"></span>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900">Solid Steel Bottom Slat</h4>
+              <p class="text-xs text-slate-500 mt-1">Bilah bawah baja solid tebal untuk mencegah benturan keras, rembesan air, dan debu.</p>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-xl bg-white border border-slate-100 shadow-sm flex items-start gap-3">
+            <span class="w-2.5 h-2.5 rounded-full bg-blue-600 mt-1.5 flex-shrink-0"></span>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900">Central Lock System</h4>
+              <p class="text-xs text-slate-500 mt-1">Kunci silinder ganda di bagian tengah memberikan perlindungan maksimal dari kedua sisi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== GALERI PENGERJAAN SECTION ==================== -->
+  <section id="galeri" class="py-16 md:py-24 bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Header -->
+      <div class="text-left max-w-2xl mb-10 md:mb-12">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Galeri & Hasil Pengerjaan
+        </h2>
+        <p class="text-slate-500 text-sm sm:text-base mt-2">
+          Koleksi proyek instalasi baru dan perbaikan rolling door kami untuk perumahan, komersial, dan industri.
+        </p>
+      </div>
+
+      <!-- Responsive Grid: 1 col on mobile, 2 cols on tablet, 3 cols on desktop -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Gallery Card 1: Instalasi Baru (1.png) -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-md bg-slate-100 aspect-[4/3] cursor-pointer" onclick="openLightbox('./assets/images/1.png', 'Proses Instalasi Rolling Door Baru')">
+          <img 
+            src="./assets/images/1.png" 
+            alt="Proses Instalasi Rolling Door Baru"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+          />
+          <div class="absolute top-4 left-4">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/95 text-slate-800 shadow-sm backdrop-blur-sm">
+              <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+              Instalasi Baru
+            </span>
+          </div>
+          <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="p-2.5 rounded-full bg-white/90 text-slate-900 shadow">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- Gallery Card 2: Servis Rolling Door (4.png) -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-md bg-slate-100 aspect-[4/3] cursor-pointer" onclick="openLightbox('./assets/images/4.png', 'Servis & Perbaikan Rolling Door')">
+          <img 
+            src="./assets/images/4.png" 
+            alt="Servis & Perbaikan Rolling Door"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+          />
+          <div class="absolute top-4 left-4">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/95 text-slate-800 shadow-sm backdrop-blur-sm">
+              <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+              Servis Rolling Door
+            </span>
+          </div>
+          <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="p-2.5 rounded-full bg-white/90 text-slate-900 shadow">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- Gallery Card 3: Instalasi Baru (2.png) -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-md bg-slate-100 aspect-[4/3] cursor-pointer" onclick="openLightbox('./assets/images/2.png', 'Pemasangan Frame & Slat Baru')">
+          <img 
+            src="./assets/images/2.png" 
+            alt="Pemasangan Frame & Slat Baru"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+          />
+          <div class="absolute top-4 left-4">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/95 text-slate-800 shadow-sm backdrop-blur-sm">
+              <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+              Instalasi Baru
+            </span>
+          </div>
+          <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="p-2.5 rounded-full bg-white/90 text-slate-900 shadow">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- Gallery Card 4: Servis Rolling Door (5.png) -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-md bg-slate-100 aspect-[4/3] cursor-pointer" onclick="openLightbox('./assets/images/5.png', 'Perbaikan Komponen & Sparepart Rolling Door')">
+          <img 
+            src="./assets/images/5.png" 
+            alt="Perbaikan Komponen & Sparepart Rolling Door"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+          />
+          <div class="absolute top-4 left-4">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/95 text-slate-800 shadow-sm backdrop-blur-sm">
+              <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+              Servis Rolling Door
+            </span>
+          </div>
+          <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="p-2.5 rounded-full bg-white/90 text-slate-900 shadow">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- Gallery Card 5: Instalasi Baru (3.png) -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-md bg-slate-100 aspect-[4/3] cursor-pointer" onclick="openLightbox('./assets/images/3.png', 'Finishing & Uji Operasional Rolling Door Baru')">
+          <img 
+            src="./assets/images/3.png" 
+            alt="Finishing & Uji Operasional Rolling Door Baru"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+          />
+          <div class="absolute top-4 left-4">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/95 text-slate-800 shadow-sm backdrop-blur-sm">
+              <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+              Instalasi Baru
+            </span>
+          </div>
+          <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="p-2.5 rounded-full bg-white/90 text-slate-900 shadow">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- Gallery Card 6: Servis Rolling Door (6.png) -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-md bg-slate-100 aspect-[4/3] cursor-pointer" onclick="openLightbox('./assets/images/6.png', 'Perawatan Rutin & Pemulihan Rolling Door')">
+          <img 
+            src="./assets/images/6.png" 
+            alt="Perawatan Rutin & Pemulihan Rolling Door"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+          />
+          <div class="absolute top-4 left-4">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-white/95 text-slate-800 shadow-sm backdrop-blur-sm">
+              <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+              Servis Rolling Door
+            </span>
+          </div>
+          <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+            <span class="p-2.5 rounded-full bg-white/90 text-slate-900 shadow">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== LAYANAN SERVIS & PERBAIKAN ==================== -->
+  <section id="layanan" class="py-12 md:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Dark Service Banner Card -->
+      <div class="bg-[#0B1325] text-white rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-2xl">
+        
+        <!-- Subtle Glow Background Effect -->
+        <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+          
+          <!-- Left Content -->
+          <div class="lg:col-span-8 space-y-6">
+            
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-bold tracking-wider uppercase mb-3">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                <span>LAYANAN 24 JAM JABODETABEK</span>
+              </div>
+              <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
+                Tukang Servis & Perbaikan Bergaransi.
+              </h2>
+            </div>
+
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
+              Siap datang langsung ke lokasi Anda! Teknisi berpengalaman langsung kerja menangani perbaikan macet, penggantian per, servis dinamo/mesin, hingga pasang baru untuk ruko, toko, gudang, rumah & pabrik.
+            </p>
+
+            <!-- 2x2 Checklist Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              
+              <div class="flex items-center gap-3">
+                <span class="w-6 h-6 rounded-full bg-emerald-950/80 border border-emerald-500/50 flex items-center justify-center text-emerald-400 flex-shrink-0">
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </span>
+                <span class="text-sm font-medium text-slate-200">Perbaiki macet, berat ditarik, rel & rantai putus</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <span class="w-6 h-6 rounded-full bg-emerald-950/80 border border-emerald-500/50 flex items-center justify-center text-emerald-400 flex-shrink-0">
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </span>
+                <span class="text-sm font-medium text-slate-200">Ganti per, kunci silinder & perbaiki mesin</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <span class="w-6 h-6 rounded-full bg-emerald-950/80 border border-emerald-500/50 flex items-center justify-center text-emerald-400 flex-shrink-0">
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </span>
+                <span class="text-sm font-medium text-slate-200">Pasang baru ruko, gudang, toko, rumah & pabrik</span>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <span class="w-6 h-6 rounded-full bg-emerald-950/80 border border-emerald-500/50 flex items-center justify-center text-emerald-400 flex-shrink-0">
+                  <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </span>
+                <span class="text-sm font-medium text-slate-200">Bergaransi resmi, harga jelas & teknisi cepat</span>
+              </div>
+
+            </div>
+
+            <!-- CTA Button -->
+            <div class="pt-4 flex flex-wrap items-center gap-3">
+              <a href="https://wa.me/6287871793001?text=Halo%20Admin,%20saya%20butuh%20tukang%20servis%20rolling%20door" 
+                 target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-full text-sm font-bold text-slate-900 bg-white hover:bg-slate-100 transition shadow-lg hover:shadow-xl active:scale-95">
+                <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.071.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z"/>
+                </svg>
+                <span>WhatsApp: 0878-7179-3001</span>
+              </a>
+              <span class="text-xs text-slate-400 font-medium">Siap datang ke lokasi, cepat & rapi!</span>
+            </div>
+
+          </div>
+
+          <!-- Right Decorative Emblem (Desktop) -->
+          <div class="lg:col-span-4 hidden lg:flex justify-end">
+            <div class="w-32 h-32 rounded-full bg-slate-800/80 border border-slate-700/80 flex items-center justify-center shadow-inner">
+              <svg class="w-12 h-12 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== SPESIFIKASI TEKNIS & FORM SURVEI ==================== -->
+  <section id="spesifikasi" class="py-16 md:py-24 bg-[#FAFAFA]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        <!-- Left Column: Spesifikasi Teknis & Wilayah Layanan (Col 1-7) -->
+        <div class="lg:col-span-7 space-y-8">
+          <div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+              Spesifikasi Teknis
+            </h2>
+            <p class="text-slate-500 text-sm sm:text-base mt-2">
+              Standar mutu material dan konstruksi kualitas terbaik untuk durabilitas jangka panjang.
+            </p>
+          </div>
+
+          <!-- Specifications Table List -->
+          <div class="divide-y divide-slate-200/80 border-y border-slate-200/80">
+            
+            <div class="py-4 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4">
+              <span class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wider">Material Plat</span>
+              <span class="text-sm sm:text-base font-bold text-slate-900">Perforated Galvalum Steel</span>
+            </div>
+
+            <div class="py-4 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4">
+              <span class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wider">Ketebalan Plat</span>
+              <span class="text-sm sm:text-base font-bold text-slate-900">1.0 mm (Residential) / 1.4 mm (Heavy Duty)</span>
+            </div>
+
+            <div class="py-4 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4">
+              <span class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wider">Finishing</span>
+              <span class="text-sm sm:text-base font-bold text-slate-900">Powder Coating Semi-Gloss / Matte</span>
+            </div>
+
+            <div class="py-4 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4">
+              <span class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wider">Sistem Operasi</span>
+              <span class="text-sm sm:text-base font-bold text-slate-900">Manual Spring Pulley / Motorized Automatic</span>
+            </div>
+
+            <div class="py-4 sm:py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-1 sm:gap-4">
+              <span class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wider">Garansi</span>
+              <span class="text-sm sm:text-base font-bold text-slate-900">Garansi Sparepart 1 Tahun</span>
+            </div>
+
+          </div>
+
+          <!-- Card: Spesialis Produk & Wilayah Layanan -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            
+            <!-- Spesialis Pintu -->
+            <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-blue-600"></span>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900">Spesialis Kami</h4>
+              </div>
+              <ul class="text-xs text-slate-600 space-y-2">
+                <li class="flex items-center gap-2 font-medium">✓ Rolling Door Manual & Otomatis</li>
+                <li class="flex items-center gap-2 font-medium">✓ Folding Gate / Pintu Harmonika</li>
+                <li class="flex items-center gap-2 font-medium">✓ Pintu Geser / Sliding Door</li>
+                <li class="flex items-center gap-2 font-medium">✓ Pagar & Pintu Besi Custom</li>
+              </ul>
+            </div>
+
+            <!-- Wilayah Layanan -->
+            <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
+              <div class="flex items-center gap-2 mb-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900">Wilayah Layanan 24 Jam</h4>
+              </div>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                <strong class="text-slate-800">Jakarta Utara:</strong> Pademangan, Tj. Priok, Kelapa Gading, Koja, Penjaringan.<br>
+                <strong class="text-slate-800">Jakarta Lainnya:</strong> Jakpus, Jakbar, Jaksel, Jaktim.<br>
+                <strong class="text-slate-800">Bodetabek:</strong> Bekasi, Depok, Bogor, Tangerang.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Column: Formulir Jadwalkan Survei (Col 8-12) -->
+        <div id="survei" class="lg:col-span-5 w-full">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 lg:p-9 shadow-xl border border-slate-100">
+            
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-900 mb-1">
+              Jadwalkan Survei Lokasi
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-500 mb-6">
+              Teknisi kami siap melakukan pengukuran dan estimasi biaya gratis langsung di lokasi Anda.
+            </p>
+
+            <form id="survey-form" class="space-y-4" onsubmit="handleFormSubmit(event)">
+              
+              <!-- Nama -->
+              <div>
+                <label for="nama" class="block text-[11px] font-bold uppercase tracking-wider text-slate-600 mb-1.5">
+                  NAMA LENGKAP
+                </label>
+                <input 
+                  type="text" 
+                  id="nama" 
+                  name="nama" 
+                  required
+                  placeholder="Contoh: Budi Santoso"
+                  class="w-full px-4 py-3 rounded-xl bg-slate-50/80 border border-slate-200 text-sm text-slate-800 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all"
+                />
+              </div>
+
+              <!-- Telepon / WA -->
+              <div>
+                <label for="telepon" class="block text-[11px] font-bold uppercase tracking-wider text-slate-600 mb-1.5">
+                  NOMOR TELEPON / WHATSAPP
+                </label>
+                <input 
+                  type="tel" 
+                  id="telepon" 
+                  name="telepon" 
+                  required
+                  placeholder="0878-xxxx-xxxx"
+                  class="w-full px-4 py-3 rounded-xl bg-slate-50/80 border border-slate-200 text-sm text-slate-800 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all"
+                />
+              </div>
+
+              <!-- Pilihan Jenis Pintu / Layanan -->
+              <div>
+                <label for="jenis-layanan" class="block text-[11px] font-bold uppercase tracking-wider text-slate-600 mb-1.5">
+                  JENIS PINTU & KEBUTUHAN
+                </label>
+                <select 
+                  id="jenis-layanan" 
+                  name="jenis-layanan" 
+                  required
+                  class="w-full px-4 py-3 rounded-xl bg-slate-50/80 border border-slate-200 text-sm text-slate-800 focus:bg-white focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all">
+                  <option value="Servis Rolling Door (Macet/Rusak/Berat)">Servis Rolling Door (Macet / Rusak / Berat)</option>
+                  <option value="Pasang Baru Rolling Door Manual/Otomatis">Pasang Baru Rolling Door (Manual / Otomatis)</option>
+                  <option value="Servis / Pasang Folding Gate (Harmonika)">Servis / Pasang Folding Gate (Harmonika)</option>
+                  <option value="Servis / Pasang Pintu Geser (Sliding Door)">Servis / Pasang Pintu Geser (Sliding Door)</option>
+                  <option value="Servis / Pasang Pagar & Pintu Besi">Servis / Pasang Pagar & Pintu Besi</option>
+                  <option value="Ganti Per / Rantai / Kunci / Mesin">Ganti Per / Rantai / Kunci / Dinamo Mesin</option>
+                  <option value="Konsultasi & Survei Lainnya">Konsultasi & Survei Lainnya</option>
+                </select>
+              </div>
+
+              <!-- Alamat -->
+              <div>
+                <label for="alamat" class="block text-[11px] font-bold uppercase tracking-wider text-slate-600 mb-1.5">
+                  ALAMAT LENGKAP LOKASI (JABODETABEK)
+                </label>
+                <textarea 
+                  id="alamat" 
+                  name="alamat" 
+                  rows="3" 
+                  required
+                  placeholder="Alamat rumah, toko, ruko, pabrik, atau gudang yang akan disurvei..."
+                  class="w-full px-4 py-3 rounded-xl bg-slate-50/80 border border-slate-200 text-sm text-slate-800 placeholder-slate-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all resize-none"
+                ></textarea>
+              </div>
+
+              <!-- Tanggal Survei -->
+              <div>
+                <label for="tanggal" class="block text-[11px] font-bold uppercase tracking-wider text-slate-600 mb-1.5">
+                  PILIH TANGGAL SURVEI
+                </label>
+                <div class="relative">
+                  <input 
+                    type="date" 
+                    id="tanggal" 
+                    name="tanggal" 
+                    required
+                    class="w-full px-4 py-3 rounded-xl bg-slate-50/80 border border-slate-200 text-sm text-slate-800 focus:bg-white focus:outline-none focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all"
+                  />
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="pt-2">
+                <button 
+                  type="submit" 
+                  class="w-full py-3.5 px-6 rounded-xl font-bold text-sm text-white bg-slate-900 hover:bg-slate-800 transition-all shadow-md hover:shadow-lg active:scale-[0.99] flex items-center justify-center gap-2">
+                  <span>Booking Survei Sekarang</span>
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </button>
+              </div>
+
+            </form>
+
+            <!-- Success Alert (Hidden by default) -->
+            <div id="form-success" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs">
+              <div class="font-bold flex items-center gap-1.5 mb-1 text-emerald-900">
+                <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Menghubungkan ke WhatsApp Admin...</span>
+              </div>
+              <p>Halaman WhatsApp sedang dibuka untuk mengirim rincian survei Anda. Jika tidak terbuka otomatis, <a id="wa-direct-link" href="#" target="_blank" class="font-bold underline text-emerald-900 hover:text-emerald-700">klik di sini untuk membuka WhatsApp</a>.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-white border-t border-slate-200 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-slate-100">
+        
+        <!-- Brand Info (Col 1-5) -->
+        <div class="md:col-span-5 space-y-3">
+          <span class="text-2xl font-extrabold tracking-tight text-slate-900">
+            DOOR<span class="text-blue-600">.CO</span>
+          </span>
+          <p class="text-sm text-slate-500 max-w-sm leading-relaxed">
+            Tukang servis, perbaikan, dan pasang baru Rolling Door & Folding Gate se-Jabodetabek. Siap datang 24 jam ke lokasi Anda dengan teknisi profesional bergaransi.
+          </p>
+        </div>
+
+        <!-- Kontak (Col 6-8) -->
+        <div class="md:col-span-3 space-y-2">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900">Kontak 24 Jam</h4>
+          <p class="text-sm font-bold text-slate-800">
+            <a href="https://wa.me/6287871793001" target="_blank" class="hover:text-blue-600 transition-colors">
+              📞 0878-7179-3001
+            </a>
+          </p>
+          <p class="text-xs text-slate-500">Siap datang ke lokasi, cepat & rapi!</p>
+          <p class="text-xs text-slate-500">WhatsApp / Telepon Standby</p>
+        </div>
+
+        <!-- Workshop / Wilayah Layanan (Col 9-12) -->
+        <div class="md:col-span-4 space-y-2">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-900">Wilayah Layanan Jabodetabek</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            • <strong>Jakarta Utara:</strong> Pademangan, Tanjung Priok, Kelapa Gading, Koja, Penjaringan<br>
+            • <strong>Jakarta Lainnya:</strong> Pusat, Barat, Selatan, Timur<br>
+            • <strong>Bodetabek:</strong> Bekasi, Depok, Bogor, Tangerang
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Copyright & Legal -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <p>© 2026 DOOR.CO. Seluruh hak cipta dilindungi.</p>
+        <div class="flex items-center space-x-6">
+          <a href="#" class="hover:text-slate-600 transition-colors">Kebijakan Privasi</a>
+          <a href="#" class="hover:text-slate-600 transition-colors">Syarat & Ketentuan</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ==================== IMAGE LIGHTBOX MODAL ==================== -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4 transition-all opacity-0">
+    <div class="relative max-w-4xl w-full bg-slate-900 rounded-2xl overflow-hidden shadow-2xl">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-slate-800 text-white">
+        <h3 id="lightbox-title" class="text-base font-bold"></h3>
+        <button onclick="closeLightbox()" class="text-slate-400 hover:text-white p-1 rounded-lg hover:bg-slate-800 transition">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div class="p-4 sm:p-6 flex items-center justify-center">
+        <img id="lightbox-img" src="" alt="Pratinjau Galeri" class="max-h-[75vh] w-auto max-w-full rounded-lg object-contain" />
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ==================== JAVASCRIPT LOGIC ==================== -->
+  <script>
+    // Set default minimum date for survey booking to today
+    const dateInput = document.getElementById('tanggal');
+    if (dateInput) {
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.min = today;
+      dateInput.value = today;
+    }
+
+    // Mobile Hamburger Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      const isExpanded = !mobileMenu.classList.contains('hidden');
+      if (isExpanded) {
+        mobileMenu.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      } else {
+        mobileMenu.classList.remove('hidden');
+        hamburgerIcon.classList.add('hidden');
+        closeIcon.classList.remove('hidden');
+      }
+    });
+
+    // Close mobile menu when clicking any nav link
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        hamburgerIcon.classList.remove('hidden');
+        closeIcon.classList.add('hidden');
+      });
+    });
+
+    // Lightbox Controls
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxTitle = document.getElementById('lightbox-title');
+
+    function openLightbox(src, title) {
+      lightboxImg.src = src;
+      lightboxTitle.textContent = title;
+      lightboxModal.classList.remove('hidden');
+      lightboxModal.classList.add('flex');
+      setTimeout(() => {
+        lightboxModal.classList.remove('opacity-0');
+      }, 10);
+    }
+
+    function closeLightbox() {
+      lightboxModal.classList.add('opacity-0');
+      setTimeout(() => {
+        lightboxModal.classList.add('hidden');
+        lightboxModal.classList.remove('flex');
+        lightboxImg.src = '';
+      }, 200);
+    }
+
+    // Close lightbox on backdrop click
+    lightboxModal.addEventListener('click', (e) => {
+      if (e.target === lightboxModal) {
+        closeLightbox();
+      }
+    });
+
+    // Keyboard ESC to close lightbox
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !lightboxModal.classList.contains('hidden')) {
+        closeLightbox();
+      }
+    });
+
+    // ==========================================
+    // PENGATURAN WHATSAPP ADMIN
+    // Nomor WhatsApp resmi: 0878-7179-3001
+    // Format: Kode negara 62 tanpa tanda +
+    // ==========================================
+    const WA_ADMIN_NUMBER = '6287871793001';
+
+    // Form submission handler -> Kirim ke WhatsApp Admin
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('survey-form');
+      const successBox = document.getElementById('form-success');
+      const directLink = document.getElementById('wa-direct-link');
+      
+      const nama = document.getElementById('nama').value.trim();
+      const telp = document.getElementById('telepon').value.trim();
+      const layananEl = document.getElementById('jenis-layanan');
+      const layanan = layananEl ? layananEl.value : 'Servis / Pasang Rolling Door';
+      const alamat = document.getElementById('alamat').value.trim();
+      const tgl = document.getElementById('tanggal').value;
+
+      // Format template pesan WhatsApp yang rapi
+      const pesan = 
+`Halo Admin DOOR.CO, saya ingin booking survei lokasi:
+
+📋 *Data Pemesanan:*
+• *Nama:* ${nama}
+• *No. WhatsApp:* ${telp}
+• *Kebutuhan:* ${layanan}
+• *Alamat Lokasi:* ${alamat}
+• *Tanggal Survei:* ${tgl}
+
+Mohon konfirmasi ketersediaan teknisi. Terima kasih!`;
+
+      // Buat URL WhatsApp
+      const waUrl = `https://wa.me/${WA_ADMIN_NUMBER}?text=${encodeURIComponent(pesan)}`;
+
+      // Tampilkan box notifikasi & siapkan direct link cadangan
+      directLink.href = waUrl;
+      successBox.classList.remove('hidden');
+      successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      // Buka WhatsApp di tab baru
+      window.open(waUrl, '_blank');
+
+      // Reset form
+      form.reset();
+    }
+  </script>
+
+</body>
+</html>
